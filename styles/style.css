@@ -1,0 +1,132 @@
+/* -------------- global -------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F4F6FB;
+    font-family: "inter", sans-serif;
+}
+
+/* -------------- header -------------- */
+
+header {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+
+    .logo{
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        gap: 50px;
+    }
+}
+
+/* -------------- header -------------- */
+
+.main {
+    padding: 20px;
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .upper {
+        padding-bottom: 20px;
+
+        .left {
+            padding-bottom: 20px;
+            .head {
+                font-weight: bold;
+                font-size: small;
+                color: #5B4FD6;
+                padding-bottom: 10px;
+            }
+
+            h1 {
+                padding-bottom: 10px;
+            }
+
+            p {
+                padding-bottom: 20px;
+            }
+
+            button {
+                color: white;
+                background-color: #5B4FD6;
+                border-radius: 16px;
+                width: 200px;
+                height: 40px;
+            }
+        }
+
+        .right {
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 16px;
+            background-color: #1B2340;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            padding: 20px;
+
+            .pixel {
+                color: #a5b3ef;
+            }
+            .nested {
+                padding-left: 15px;
+            }
+        }
+    }
+} 
+
+.lower {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+
+        .card {
+            background-color: white;
+            border: solid 1px #363d54;
+            border-radius: 16px;
+            padding: 10px;
+
+            h2 span {
+                color: #5B4FD6;
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+hr {
+    width: 90%;
+    margin-top: 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .h1 {
+        font-size: ;
+    }
+}
