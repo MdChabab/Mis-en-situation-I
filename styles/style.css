@@ -16,31 +16,37 @@ header {
     background-color: white;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 10px;
     padding: 20px;
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
 
     .logo{
-        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
     }
 
-    nav ul {
+    nav {
         display: flex;
-        list-style-type: none;
-        gap: 50px;
+        align-items: center;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            gap: 50px;
+        }
     }
+    
 }
 
-/* -------------- main -------------- */
+/* -------------- header -------------- */
 
 .main {
     padding: 20px;
 
     .flex {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 10px;
     }
 
@@ -74,14 +80,13 @@ header {
         }
 
         .right {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Courier New', Courier, monospace;
             border-radius: 16px;
             background-color: #1B2340;
             color: white;
             display: flex;
             flex-direction: column;
             gap: 10px;
-            width: 100%;
             padding: 20px;
 
             .pixel {
@@ -96,16 +101,16 @@ header {
 
 .lower {
     .cards {
+        padding-top: 20px;
         display: flex;
         flex-direction: column;
         gap: 10px;
-        width: 100%;
 
         .card {
             background-color: white;
             border: solid 1px #363d54;
             border-radius: 16px;
-            padding: 10px;
+            padding: 20px;
 
             h2 span {
                 color: #5B4FD6;
@@ -115,18 +120,63 @@ header {
     }
 }
 
-hr {
-    width: 90%;
+.seperator {
     margin-top: 50px;
+    hr {
+        width: 90%;
+    }
 }
+
 
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
+    padding-bottom: 20px;
 
-    .h1 {
-        font-size: ;
+    .logo2 {
+        font-size: larger;
+        font-weight: bold;
+    }
+}
+
+/* --------- desktop adapted --------- */
+
+@media (width > 375px) {
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main {
+        .flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .upper {
+            .right {
+                width: 40%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .lower .card span{
+            display: block;
+        }
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: center;
+
+        .logo2 {
+            font-size: medium;
+            font-weight: 100;
+        }
     }
 }
